@@ -18,11 +18,11 @@ class Ruscker < Formula
   desc "Lightweight Rust proxy for containerized apps (Shiny/Streamlit/Dash) and APIs"
   homepage "https://strategicprojects.github.io/ruscker/"
   license "Apache-2.0"
-  version "0.2.26"
+  version "0.2.27"
 
   on_macos do
     url "https://github.com/StrategicProjects/ruscker/archive/refs/tags/v#{version}.tar.gz"
-    sha256 "994b5229570c2837ba1982e3cd83f9a057ead72e2ded1ee1a0c92347a9e1cf02"
+    sha256 "bc5df2f4d6985b4b439158f78effebee91ba7fa670e804bde0060a5f92ed4f07"
     depends_on "rust" => :build
 
     def install
@@ -33,11 +33,11 @@ class Ruscker < Formula
   on_linux do
     on_arm do
       url "https://github.com/StrategicProjects/ruscker/releases/download/v#{version}/ruscker-#{version}-linux-arm64.tar.gz"
-      sha256 "da6917f189ec00991dc89e196564134efddc22e0c88d2c1cee1de6b92a58edc6"
+      sha256 "447d2c6227672306882f12a16df9f614d691e3faca9feb538bd9fa1f4e297741"
     end
     on_intel do
       url "https://github.com/StrategicProjects/ruscker/releases/download/v#{version}/ruscker-#{version}-linux-amd64.tar.gz"
-      sha256 "fef8650dc5c0a5cbfeedc54aa5e281f6199fee32a153579a011977f7c53ec21b"
+      sha256 "8420cd471db39ba86dceae40bd6182ef5402262c7a2607bab29c759723bee9fe"
     end
 
     def install
