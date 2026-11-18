@@ -21,3 +21,16 @@ repo's `packaging/homebrew/README.md`).
 
 > The current formula carries `sha256` placeholders until the first
 > tagged `v0.1.0` release; it won't install until those are filled in.
+
+## datasus
+
+[datasus](https://github.com/StrategicProjects/datasus-rs) — converts
+DATASUS `.dbc`/`.dbf` files to Parquet, CSV or DBF.
+
+```sh
+brew install strategicprojects/tap/datasus
+```
+
+Builds from source on macOS and Linux (Rust is installed as a build
+dependency). The formula's canonical source lives in the main repo at
+[`packaging/homebrew/datasus.rb`](https://github.com/StrategicProjects/datasus-rs/blob/main/packaging/homebrew/datasus.rb).
